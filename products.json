@@ -1,0 +1,12 @@
+{
+  "settings": {
+    "whatsapp": "91XXXXXXXXXX",
+    "email": "",
+    "instagram": ""
+  },
+  "products": [
+    { "id": "p1", "name": "Handmade serving tray", "category": "Kitchen & Dining", "price": 899, "image": "", "desc": "Sturdy tray for tea, snacks and serving guests.", "hidden": false },
+    { "id": "p2", "name": "Table decor piece", "category": "Decor", "price": 649, "image": "", "desc": "A small handcrafted piece for shelves and side tables.", "hidden": false },
+    { "id": "p3", "name": "Storage basket", "category": "Storage", "price": 799, "image": "", "desc": "Keeps blankets, toys or magazines neat and easy to reach.", "hidden": false }
+  ]
+}

@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>H A House | Handcrafted Home Products</title>
+<meta name="description" content="H A House makes handcrafted products for the home. See prices, pick what you like and order directly on WhatsApp.">
+<meta name="theme-color" content="#1E3A32">
+<meta property="og:type" content="website">
+<meta property="og:title" content="H A House | Handcrafted Home Products">
+<meta property="og:description" content="Handcrafted products for the home. Order directly on WhatsApp.">
+<meta property="og:url" content="https://hashim049.github.io/H-A-house/">
+<meta property="og:image" content="https://hashim049.github.io/H-A-house/og-image.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://hashim049.github.io/H-A-house/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Karla:wght@400;500;700&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{ "@context": "https://schema.org", "@type": "Store", "name": "H A House", "url": "https://hashim049.github.io/H-A-house/", "description": "Handcrafted products for the home." }
+</script>
+<style>
+  :root {
+    --green: #1E3A32; --sage: #E8EDE6; --paper: #F7F8F5; --ink: #1B1F1D; --muted: #55605A;
+    --marigold: #E3A72F; --line: #CBD4CB; --wa: #1FA855; --wa-dark: #178443; --radius: 10px; --max: 1120px;
+    --head: "Bricolage Grotesque", "Trebuchet MS", system-ui, sans-serif;
+    --body: "Karla", system-ui, -apple-system, "Segoe UI", sans-serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --paper: #121714; --sage: #1A221E; --ink: #EEF1EC; --muted: #A7B2AA; --line: #2C3832; --green: #6FB39B; }
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; scroll-padding-top: 76px; }
+  body { margin: 0; background: var(--paper); color: var(--ink); font-family: var(--body); font-size: 17px; line-height: 1.6; }
+  img { max-width: 100%; display: block; }
+  a { color: inherit; }
+  .wrap { width: min(var(--max), 100% - 40px); margin-inline: auto; }
+  h1, h2, h3 { font-family: var(--head); line-height: 1.12; margin: 0; letter-spacing: -0.01em; }
+  h2 { font-size: clamp(1.7rem, 4vw, 2.4rem); }
+  h3 { font-size: 1.15rem; }
+  p { margin: 0; }
+  .lead { color: var(--muted); max-width: 56ch; }
+  :focus-visible { outline: 3px solid var(--marigold); outline-offset: 3px; border-radius: 4px; }
+
+  .site-header { position: sticky; top: 0; z-index: 20; background: var(--paper); border-bottom: 1px solid var(--line); }
+  .site-header .wrap { display: flex; align-items: center; justify-content: space-between; gap: 16px; min-height: 64px; }
+  .brand { font-family: var(--head); font-weight: 700; font-size: 1.25rem; text-decoration: none; }
+  nav { display: flex; gap: 22px; align-items: center; }
+  nav a { text-decoration: none; font-weight: 500; }
+  nav a:not(.btn):hover { text-decoration: underline; text-underline-offset: 4px; }
+  @media (max-width: 640px) { nav .nav-text { display: none; } }
+
+  .btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; padding: 12px 20px; border-radius: var(--radius); font: 700 1rem var(--body); text-decoration: none; cursor: pointer; border: 2px solid transparent; }
+  .btn-wa { background: var(--wa); color: #fff; }
+  .btn-wa:hover { background: var(--wa-dark); }
+  .btn-line { border-color: var(--green); color: var(--green); background: transparent; }
+  .btn-line:hover { background: var(--green); color: var(--paper); }
+  .btn-sm { padding: 9px 14px; font-size: 0.95rem; }
+
+  .hero { padding: 72px 0 56px; background: var(--sage); border-bottom: 1px solid var(--line); }
+  .hero h1 { font-size: clamp(2.5rem, 8vw, 5rem); font-weight: 700; max-width: 14ch; }
+  .hero .lead { margin-top: 20px; font-size: 1.15rem; }
+  .hero-actions { margin-top: 28px; display: flex; flex-wrap: wrap; gap: 12px; }
+  .cats { margin-top: 40px; display: flex; flex-wrap: wrap; gap: 8px; }
+  .cats a { padding: 6px 14px; border: 1px solid var(--green); border-radius: 999px; text-decoration: none; font-weight: 500; color: var(--green); }
+  .cats a:hover { background: var(--green); color: var(--paper); }
+
+  section { padding: 72px 0; }
+  .section-head { margin-bottom: 32px; display: grid; gap: 10px; }
+
+  .filters { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 28px; }
+  .filters button { font: 500 0.95rem var(--body); padding: 8px 16px; border-radius: 999px; cursor: pointer; border: 1px solid var(--line); background: transparent; color: var(--ink); }
+  .filters button[aria-pressed="true"] { background: var(--green); border-color: var(--green); color: var(--paper); }
+  @media (prefers-color-scheme: dark) { .filters button[aria-pressed="true"] { color: #10201A; } }
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 24px; }
+  .card { display: flex; flex-direction: column; border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; background: var(--paper); }
+  .card-img { all: unset; box-sizing: border-box; display: grid; place-items: center; aspect-ratio: 1 / 1; background: var(--sage); cursor: zoom-in; font-family: var(--head); font-size: 1.1rem; color: var(--green); padding: 12px; text-align: center; }
+  .card-img img { width: 100%; height: 100%; object-fit: contain; }
+  .card-img:focus-visible { outline: 3px solid var(--marigold); outline-offset: -3px; }
+  .card-body { padding: 18px; display: flex; flex-direction: column; gap: 8px; flex: 1; }
+  .card-cat { color: var(--muted); font-size: 0.9rem; }
+  .card-desc { color: var(--muted); font-size: 0.97rem; }
+  .card-foot { margin-top: auto; padding-top: 12px; display: flex; align-items: center; justify-content: space-between; gap: 10px; flex-wrap: wrap; }
+  .price { font-family: var(--head); font-weight: 700; font-size: 1.3rem; }
+  .empty { color: var(--muted); padding: 24px 0; }
+
+  dialog { border: 0; padding: 0; border-radius: 14px; width: min(560px, 94vw); max-height: 94vh; background: var(--paper); color: var(--ink); }
+  dialog::backdrop { background: rgba(0,0,0,.65); }
+  .dlg-img { background: var(--sage); display: grid; place-items: center; padding: 12px; }
+  .dlg-img img { max-height: 62vh; width: auto; max-width: 100%; object-fit: contain; }
+  .dlg-body { padding: 18px 20px 22px; display: grid; gap: 8px; }
+  .dlg-actions { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 8px; }
+
+  .steps { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 24px; counter-reset: step; }
+  .steps li { counter-increment: step; border-top: 3px solid var(--marigold); padding-top: 14px; }
+  .steps li::before { content: counter(step); font-family: var(--head); font-weight: 700; font-size: 1.6rem; color: var(--green); display: block; }
+  .steps h3 { margin: 4px 0 6px; }
+  .steps p { color: var(--muted); font-size: 0.97rem; }
+
+  .about { background: var(--sage); border-block: 1px solid var(--line); }
+  .about .cols { display: grid; gap: 40px; grid-template-columns: 1.2fr 1fr; align-items: start; }
+  @media (max-width: 760px) { .about .cols { grid-template-columns: 1fr; } }
+  .about p + p { margin-top: 14px; }
+  .facts { margin: 0; padding: 0; list-style: none; display: grid; gap: 14px; }
+  .facts li { border-left: 3px solid var(--green); padding-left: 14px; }
+  .facts strong { display: block; font-family: var(--head); }
+  .facts span { color: var(--muted); font-size: 0.97rem; }
+
+  .faq { max-width: 760px; }
+  details { border-bottom: 1px solid var(--line); padding: 16px 0; }
+  summary { cursor: pointer; font-weight: 700; list-style: none; display: flex; justify-content: space-between; gap: 16px; }
+  summary::-webkit-details-marker { display: none; }
+  summary::after { content: "+"; font-size: 1.4rem; line-height: 1; color: var(--green); }
+  details[open] summary::after { content: "\2212"; }
+  details p { margin-top: 10px; color: var(--muted); }
+
+  .contact { background: #1E3A32; color: #F2F5F1; }
+  .contact .lead { color: #C9D6CE; }
+  .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: start; }
+  @media (max-width: 760px) { .contact-grid { grid-template-columns: 1fr; } }
+  .contact ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 12px; }
+  .contact li span { display: block; color: #C9D6CE; font-size: 0.9rem; }
+  .contact a:not(.btn) { text-underline-offset: 3px; }
+
+  .site-footer { padding: 28px 0; color: var(--muted); font-size: 0.93rem; }
+  .float-wa { position: fixed; right: 16px; bottom: 16px; z-index: 30; box-shadow: 0 4px 14px rgba(0,0,0,.25); }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="#top">H A House</a>
+    <nav aria-label="Main">
+      <a class="nav-text" href="#products">Products</a>
+      <a class="nav-text" href="#how">How to order</a>
+      <a class="nav-text" href="#about">About</a>
+      <a class="nav-text" href="#contact">Contact</a>
+      <a class="btn btn-wa btn-sm" data-wa href="#contact">WhatsApp</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <div class="hero">
+    <div class="wrap">
+      <!-- EDIT: say exactly what you make, e.g. "Handcrafted wooden decor for your home" -->
+      <h1>Handcrafted products for your home.</h1>
+      <p class="lead">Every piece is made by hand and sold directly by us. Pick what you like, check the price, and order on WhatsApp. No sign-up needed.</p>
+      <div class="hero-actions">
+        <a class="btn btn-wa" data-wa href="#contact">Order on WhatsApp</a>
+        <a class="btn btn-line" href="#products">See products and prices</a>
+      </div>
+      <div class="cats" id="hero-cats" aria-label="Browse by category"></div>
+    </div>
+  </div>
+
+  <section id="products">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Products and prices</h2>
+        <p class="lead">Tap a photo to see it full size. Tap “Order on WhatsApp” and your message is filled in for you.</p>
+      </div>
+      <div class="filters" id="filters" role="group" aria-label="Filter products by category"></div>
+      <div class="grid" id="grid" aria-live="polite"><p class="empty">Loading products…</p></div>
+    </div>
+  </section>
+
+  <section id="how" style="padding-top:0">
+    <div class="wrap">
+      <div class="section-head"><h2>How to order</h2></div>
+      <ol class="steps">
+        <li><h3>Choose a product</h3><p>Browse the list above and tap the order button on the one you want.</p></li>
+        <li><h3>Send us the message</h3><p>WhatsApp opens with the product name and price already written.</p></li>
+        <li><h3>Confirm and pay</h3><p>We confirm availability, delivery cost and time. Payment details are shared on WhatsApp.</p></li>
+        <li><h3>Get it delivered</h3><p>We pack it carefully and send you the tracking details.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <div class="wrap cols">
+      <div>
+        <h2>Made by hand, sold by the maker</h2>
+        <!-- EDIT: replace with your real story. -->
+        <p style="margin-top:18px">H A House started with a simple idea: useful things for the home should also be good to look at and built to last. We keep our range small so each piece gets proper attention.</p>
+        <p>We sell directly, so the price you see is the price you pay for the product, with no middlemen.</p>
+      </div>
+      <ul class="facts">
+        <li><strong>Handmade</strong><span>Each piece is finished by hand, so small variations are normal.</span></li>
+        <li><strong>Direct from us</strong><span>You talk to the people who make your order.</span></li>
+        <li><strong>Custom orders</strong><span>Need a different size or finish? Ask us on WhatsApp.</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="faq">
+    <div class="wrap">
+      <div class="section-head"><h2>Questions before you order</h2></div>
+      <div class="faq">
+        <!-- EDIT: make every answer match what you actually do. -->
+        <details><summary>Where do you deliver?</summary><p>We deliver across India. Delivery cost and time depend on your city and the size of the product. Share your pin code on WhatsApp and we will tell you.</p></details>
+        <details><summary>How do I pay?</summary><p>We accept UPI and bank transfer. We share the details on WhatsApp once your order is confirmed.</p></details>
+        <details><summary>Can I return or exchange a product?</summary><p>If your product arrives damaged, send us a photo within 48 hours and we will fix it or replace it.</p></details>
+        <details><summary>Can you make something custom?</summary><p>Yes, in many cases. Send us what you have in mind and we will tell you if we can make it, how long it takes and what it costs.</p></details>
+        <details><summary>How long does an order take?</summary><p>Items in stock ship in 2 to 3 days. Made-to-order items take longer and we confirm the time before you pay.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="wrap contact-grid">
+      <div>
+        <h2>Ready to order?</h2>
+        <p class="lead" style="margin-top:12px">WhatsApp is the fastest way to reach us. We usually reply within a few hours.</p>
+        <p style="margin-top:22px"><a class="btn btn-wa" data-wa href="#contact">Chat on WhatsApp</a></p>
+      </div>
+      <ul id="contact-list"></ul>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer"><div class="wrap">© <span id="year"></span> H A House. All rights reserved.</div></footer>
+<a class="btn btn-wa float-wa" data-wa href="#contact" aria-label="Chat with H A House on WhatsApp">WhatsApp</a>
+
+<dialog id="viewer" aria-label="Product photo">
+  <div class="dlg-img" id="dlg-img"></div>
+  <div class="dlg-body">
+    <h3 id="dlg-name"></h3>
+    <p class="lead" id="dlg-desc"></p>
+    <p class="price" id="dlg-price"></p>
+    <div class="dlg-actions">
+      <a class="btn btn-wa" id="dlg-order" target="_blank" rel="noopener">Order on WhatsApp</a>
+      <button class="btn btn-line" id="dlg-close" type="button">Close</button>
+    </div>
+  </div>
+</dialog>
+
+<script>
+  const rupee = n => "\u20B9" + Number(n).toLocaleString("en-IN");
+  const grid = document.getElementById("grid");
+  const filters = document.getElementById("filters");
+  const heroCats = document.getElementById("hero-cats");
+  let DATA = { settings: {}, products: [] };
+  let active = "All";
+  let wa = "";
+
+  function el(tag, props, kids) {
+    const n = document.createElement(tag);
+    Object.assign(n, props || {});
+    (kids || []).forEach(k => n.append(k));
+    return n;
+  }
+  function waLink(msg) { return "https://wa.me/" + wa + "?text=" + encodeURIComponent(msg); }
+  function orderMsg(p) {
+    return "Hi H A House, I want to order: " + p.name + (p.price > 0 ? " (" + rupee(p.price) + ")" : "") + ". Please share availability and delivery details.";
+  }
+
+  const viewer = document.getElementById("viewer");
+  document.getElementById("dlg-close").addEventListener("click", () => viewer.close());
+  viewer.addEventListener("click", e => { if (e.target === viewer) viewer.close(); });
+  function openViewer(p) {
+    const box = document.getElementById("dlg-img");
+    box.replaceChildren();
+    if (p.image) box.append(el("img", { src: p.image, alt: p.name }));
+    else box.append(el("p", { textContent: p.name }));
+    document.getElementById("dlg-name").textContent = p.name;
+    document.getElementById("dlg-desc").textContent = p.desc || "";
+    document.getElementById("dlg-price").textContent = p.price > 0 ? rupee(p.price) : "Ask for price";
+    document.getElementById("dlg-order").href = waLink(orderMsg(p));
+    viewer.showModal();
+  }
+
+  function visible() { return DATA.products.filter(p => !p.hidden); }
+
+  function renderProducts() {
+    grid.replaceChildren();
+    const list = visible().filter(p => active === "All" || p.category === active);
+    if (!list.length) {
+      grid.append(el("p", { className: "empty", textContent: "No products here yet. Message us on WhatsApp and we will help." }));
+      return;
+    }
+    list.forEach(p => {
+      const imgBtn = el("button", { className: "card-img", type: "button" });
+      imgBtn.setAttribute("aria-label", "View " + p.name + " full size");
+      if (p.image) {
+        const img = el("img", { src: p.image, alt: p.name, loading: "lazy" });
+        img.addEventListener("error", () => imgBtn.replaceChildren(p.name));
+        imgBtn.append(img);
+      } else imgBtn.append(p.name);
+      imgBtn.addEventListener("click", () => openViewer(p));
+      const order = el("a", { className: "btn btn-wa btn-sm", href: waLink(orderMsg(p)), target: "_blank", rel: "noopener", textContent: "Order on WhatsApp" });
+      order.setAttribute("aria-label", "Order " + p.name + " on WhatsApp");
+      grid.append(el("article", { className: "card" }, [
+        imgBtn,
+        el("div", { className: "card-body" }, [
+          el("span", { className: "card-cat", textContent: p.category || "" }),
+          el("h3", { textContent: p.name }),
+          el("p", { className: "card-desc", textContent: p.desc || "" }),
+          el("div", { className: "card-foot" }, [el("span", { className: "price", textContent: p.price > 0 ? rupee(p.price) : "Ask for price" }), order])
+        ])
+      ]));
+    });
+  }
+
+  function renderFilters(cats) {
+    filters.replaceChildren();
+    cats.forEach(c => {
+      const b = el("button", { type: "button", textContent: c });
+      b.setAttribute("aria-pressed", String(c === active));
+      b.addEventListener("click", () => { active = c; renderFilters(cats); renderProducts(); });
+      filters.append(b);
+    });
+  }
+
+  function init() {
+    const s = DATA.settings || {};
+    wa = String(s.whatsapp || "").replace(/\D/g, "");
+    document.querySelectorAll("[data-wa]").forEach(a => {
+      a.href = waLink("Hi H A House, I would like to know more about your products.");
+      a.target = "_blank"; a.rel = "noopener";
+    });
+    const cl = document.getElementById("contact-list");
+    const row = (label, node) => cl.append(el("li", {}, [el("span", { textContent: label }), node]));
+    row("WhatsApp", el("a", { href: waLink("Hi H A House"), target: "_blank", rel: "noopener", textContent: wa ? "+" + wa : "Message us" }));
+    if (s.email) row("Email", el("a", { href: "mailto:" + s.email, textContent: s.email }));
+    if (s.instagram) {
+      const h = String(s.instagram).replace(/^@/, "");
+      row("Instagram", el("a", { href: "https://instagram.com/" + encodeURIComponent(h), target: "_blank", rel: "noopener", textContent: "@" + h }));
+    }
+    const cats = ["All", ...new Set(visible().map(p => p.category).filter(Boolean))];
+    heroCats.replaceChildren();
+    cats.filter(c => c !== "All").forEach(c => {
+      const a = el("a", { href: "#products", textContent: c });
+      a.addEventListener("click", () => { active = c; renderFilters(cats); renderProducts(); });
+      heroCats.append(a);
+    });
+    renderFilters(cats);
+    renderProducts();
+  }
+
+  document.getElementById("year").textContent = new Date().getFullYear();
+
+  fetch("products.json?v=" + Date.now(), { cache: "no-store" })
+    .then(r => { if (!r.ok) throw new Error("bad"); return r.json(); })
+    .then(d => { DATA = d; init(); })
+    .catch(() => {
+      init();
+      grid.replaceChildren(el("p", { className: "empty", textContent: "The product list could not load. Please message us on WhatsApp and we will send it to you." }));
+    });
+</script>
+</body>
+</html>
